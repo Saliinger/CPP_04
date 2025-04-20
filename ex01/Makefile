@@ -1,4 +1,4 @@
-NAME = Polymorphism
+NAME = Fire
 CXX = c++
 CXXFLAGS = -Werror -Wall -Wextra -std=c++98
 

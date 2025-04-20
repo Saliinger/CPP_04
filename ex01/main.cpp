@@ -1,3 +1,8 @@
+#include <iostream>
+#include "./include/Animal.hpp"
+#include "./include/Cat.hpp"
+#include "./include/Dog.hpp"
+
 int main()
 {
     const Animal* j = new Dog();
