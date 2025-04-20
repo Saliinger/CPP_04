@@ -3,6 +3,9 @@ CXX = c++
 CXXFLAGS = -Werror -Wall -Wextra -std=c++98
 
 SRC =	main.cpp \
+		./src/Animal.cpp \
+		./src/Cat.cpp \
+		./src/Dog.cpp \
 		
 
 OBJ	=	$(SRC:.cpp=.o)
