@@ -24,5 +24,6 @@ int main()
     delete j;
     delete i;
     delete wrong;
+    delete wonton;
     return 0;
 }
