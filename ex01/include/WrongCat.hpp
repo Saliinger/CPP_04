@@ -3,17 +3,17 @@
 #include <iostream>
 #include "Animal.hpp"
 
-class Cat : public Animal {
+class WrongCat : public Animal {
     private:
         std::string _name;
     public:
         // orthodox canonical form
-        Cat();
-        Cat(const Cat &src);
-        ~Cat();
-        Cat &operator=(const Cat &src);
+        WrongCat();
+        WrongCat(const WrongCat &src);
+        ~WrongCat();
+        WrongCat &operator=(const WrongCat &src);
 
         // type constructor
-        Cat(std::string type);
+        WrongCat(std::string name);
         void makeSound() const;
 };

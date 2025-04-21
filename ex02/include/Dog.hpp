@@ -1,14 +1,11 @@
-#ifndef DOG_HPP
-#define DOG_HPP
+#pragma once
 
 #include <iostream>
 #include "Animal.hpp"
-#include "Brain.hpp"
 
 class Dog : public Animal {
     private:
         std::string _name;
-        Brain *_brain;
     public:
         // orthodox canonical form
         Dog();
@@ -18,6 +15,5 @@ class Dog : public Animal {
 
         // name constructor
         Dog(std::string name);
+        void makeSound() const;
 };
-
-#endif
