@@ -28,6 +28,6 @@ Dog::Dog(std::string name) : Animal("Dog") {
     _name = name;
 }
 
-void Dog::makeSound() {
+void Dog::makeSound() const{
     std::cout << "Woof!" << std::endl;
 }

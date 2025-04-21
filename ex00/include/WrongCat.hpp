@@ -14,6 +14,6 @@ class WrongCat : public Animal {
         WrongCat &operator=(const WrongCat &src);
 
         // type constructor
-        WrongCat(std::string type);
-        virtual void makeSound();
+        WrongCat(std::string name);
+        void makeSound() const;
 };

@@ -28,6 +28,6 @@ WrongCat::WrongCat(std::string name) : Animal("WrongCat") {
     _name = name;
 }
 
-void WrongCat::makeSound() {
+void WrongCat::makeSound() const {
     std::cout << "WrongMeow!" << std::endl;
 }

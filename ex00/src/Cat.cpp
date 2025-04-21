@@ -28,6 +28,6 @@ Cat::Cat(std::string name) : Animal("Cat") {
     _name = name;
 }
 
-void Cat::makeSound() {
+void Cat::makeSound() const {
     std::cout << "Meow!" << std::endl;
 }

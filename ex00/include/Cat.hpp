@@ -15,5 +15,5 @@ class Cat : public Animal {
 
         // type constructor
         Cat(std::string type);
-        virtual void makeSound();
+        void makeSound() const;
 };

@@ -15,5 +15,5 @@ class Dog : public Animal {
 
         // name constructor
         Dog(std::string name);
-        virtual void makeSound();
+        void makeSound() const;
 };
