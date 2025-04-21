@@ -1,9 +1,9 @@
 #pragma once
 
 #include <iostream>
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-class WrongCat : public Animal {
+class WrongCat : public WrongAnimal {
     private:
         std::string _name;
     public:
