@@ -21,4 +21,5 @@ class Dog : public Animal {
         // getters and setters
         void getIdea(int index) const;
         void setIdea(int index, const std::string &idea);
+        virtual void makeSound() const;
 };

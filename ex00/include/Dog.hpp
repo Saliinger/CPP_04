@@ -1,5 +1,4 @@
-#ifndef DOG_HPP
-#define DOG_HPP
+#pragma once
 
 #include <iostream>
 #include "Animal.hpp"
@@ -16,6 +15,5 @@ class Dog : public Animal {
 
         // name constructor
         Dog(std::string name);
+        virtual void makeSound();
 };
-
-#endif

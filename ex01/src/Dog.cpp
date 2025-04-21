@@ -46,3 +46,7 @@ void Dog::setIdea(int index, const std::string &idea) {
         std::cout << "Index out of range" << std::endl;
     }
 }
+
+void Dog::makeSound() const {
+    std::cout << "Woof!" << std::endl;
+}

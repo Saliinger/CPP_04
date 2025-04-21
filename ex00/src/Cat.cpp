@@ -27,3 +27,7 @@ Cat::Cat(std::string name) : Animal("Cat") {
     std::cout << "Cat type constructor called" << std::endl;
     _name = name;
 }
+
+void Cat::makeSound() {
+    std::cout << "Meow!" << std::endl;
+}

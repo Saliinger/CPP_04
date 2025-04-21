@@ -1,5 +1,4 @@
-#ifndef AMINAL_HPP
-#define AMINAL_HPP
+#pragma once
 
 #include <iostream>
 
@@ -17,6 +16,6 @@ class Animal {
         Animal(std::string type);
         void makeSound() const;
         std::string getType() const;
+        virtual void makeSound(); // Pure virtual function
 };
 
-#endif

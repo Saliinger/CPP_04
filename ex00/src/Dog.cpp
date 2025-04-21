@@ -27,3 +27,7 @@ Dog::Dog(std::string name) : Animal("Dog") {
     std::cout << "Dog type constructor called" << std::endl;
     _name = name;
 }
+
+void Dog::makeSound() {
+    std::cout << "Woof!" << std::endl;
+}
