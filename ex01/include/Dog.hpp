@@ -1,5 +1,4 @@
-#ifndef DOG_HPP
-#define DOG_HPP
+#pragma once
 
 #include <iostream>
 #include "Animal.hpp"
@@ -18,6 +17,8 @@ class Dog : public Animal {
 
         // name constructor
         Dog(std::string name);
-};
 
-#endif
+        // getters and setters
+        void getIdea(int index) const;
+        void setIdea(int index, const std::string &idea);
+};

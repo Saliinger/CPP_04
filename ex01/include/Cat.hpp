@@ -1,5 +1,4 @@
-#ifndef CAT_HPP
-#define CAT_HPP
+#pragma once
 
 #include <iostream>
 #include "Animal.hpp"
@@ -18,6 +17,8 @@ class Cat : public Animal {
 
         // type constructor
         Cat(std::string type);
-};
 
-#endif
+            // Setters and Getters
+        void setIdea(int index, const std::string &idea);
+        void getIdea(int index) const;
+    };
