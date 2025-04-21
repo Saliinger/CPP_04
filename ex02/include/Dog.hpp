@@ -3,10 +3,12 @@
 
 #include <iostream>
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 class Dog : public Animal {
     private:
         std::string _name;
+        Brain *_brain;
     public:
         // orthodox canonical form
         Dog();
