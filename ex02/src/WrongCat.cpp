@@ -3,15 +3,18 @@
 WrongCat::WrongCat() : Animal("WrongCat") {
     std::cout << "WrongCat default constructor called" << std::endl;
     _name = "WrongCat";
+    _brain= new Brain();
 }
 
 WrongCat::WrongCat(const WrongCat &src) : Animal("WrongCat") {
     std::cout << "WrongCat copy constructor called" << std::endl;
-    this->_name = src._name;
+    _name = src._name;
+    _brain = new Brain(*src._brain);
 }
 
 WrongCat::~WrongCat() {
     std::cout << "WrongCat destructor called" << std::endl;
+    delete _brain;
 }
 
 WrongCat &WrongCat::operator=(const WrongCat &src) {
@@ -19,6 +22,7 @@ WrongCat &WrongCat::operator=(const WrongCat &src) {
     if (this != &src) {
         _type = "WrongCat";
         _name = src._name;
+        _brain = new Brain(*src._brain);
     }
     return *this;
 }
@@ -30,4 +34,13 @@ WrongCat::WrongCat(std::string name) : Animal("WrongCat") {
 
 void WrongCat::makeSound() const {
     std::cout << "WrongMeow!" << std::endl;
+}
+
+
+void WrongCat::setIdea(int index, std::string const &src) {
+    _brain->setIdea(index, src);
+}
+
+std::string WrongCat::getIdea(int index) const {
+    return _brain->getIdea(index);
 }

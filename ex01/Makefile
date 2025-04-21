@@ -1,6 +1,6 @@
 NAME = Fire
 CXX = c++
-CXXFLAGS = -Werror -Wall -Wextra -std=c++98
+CXXFLAGS = -Werror -Wall -Wextra -std=c++98 -g3
 
 SRC =	main.cpp \
 		./src/Animal.cpp \

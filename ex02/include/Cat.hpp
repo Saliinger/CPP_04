@@ -2,10 +2,12 @@
 
 #include <iostream>
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 class Cat : public Animal {
     private:
         std::string _name;
+        Brain *_brain;
     public:
         // orthodox canonical form
         Cat();
@@ -15,5 +17,9 @@ class Cat : public Animal {
 
         // type constructor
         Cat(std::string type);
+
+        // functions
         void makeSound() const;
+        void setIdea(int index, std::string const &src);
+        std::string getIdea(int index) const;
 };

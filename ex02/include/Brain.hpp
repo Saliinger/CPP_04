@@ -9,7 +9,7 @@ class Brain {
         // orthodox cannonical form
         Brain();
         Brain(Brain const &src);
-        virtual ~Brain();
+        ~Brain();
         Brain &operator=(Brain const &src);
 
         // functions

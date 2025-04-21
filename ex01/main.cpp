@@ -55,5 +55,12 @@ int main()
     }
 
     std::cout << "\n--- Tests termines ---" << std::endl;
+    {
+        Dog tmp;
+        tmp.setIdea(0, "test");
+        Dog tmp2 = tmp;
+        std::cout << "yrdy" << tmp2.getIdea(0) << std::endl;
+        std::cout << tmp.getIdea(0) << std::endl; 
+    }
     return 0;
 }
